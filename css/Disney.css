@@ -1,0 +1,847 @@
+/* Start global rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+:root {
+    --main-color: #0D85CA;
+}
+
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+
+/* End global rules */
+
+/* #################### Start header #################### */
+header {
+    position: relative;
+}
+
+header .container {
+    width: 100%;
+    background-color: #888888;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    padding: 0 40px;
+    z-index: 3;
+    font-size: 18px;
+}
+
+header .container .logo img {
+    width: 100px;
+    margin: 10px;
+}
+
+header .container ul {
+    display: flex;
+    list-style: none;
+    margin: 15px 20px 15px 0;
+}
+
+header .container li {
+    margin: 15px 15px;
+}
+
+header .container a {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+header .container a:hover {
+    color: var(--main-color);
+}
+
+/* Start landing */
+.landing {
+    padding-top: 160px;
+    background-image: url(../images/back.jpg);
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+
+.landing h1 {
+    margin: 0;
+}
+
+.landing p {
+    font-size: 20px;
+}
+
+.landing p span {
+    color: var(--main-color);
+}
+
+.landing p span:hover {
+    cursor: pointer;
+}
+
+.landing button {
+    margin-top: 30px;
+    background-color: white;
+    width: 150px;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    font-size: 20px;
+}
+
+.landing button:hover {
+    cursor: pointer;
+    background-color: #888888;
+    transition: 0.3s;
+}
+
+.landing .info {
+    text-align: center;
+}
+
+/* End landing */
+/* #################### End header #################### */
+
+/* ################# Start second section ################# */
+
+@media (min-width: 768px) {
+    .secondsection .container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+/* medium */
+@media (min-width: 992px) {
+    .secondsection .container {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+
+/* large */
+@media (min-width: 1200px) {
+    .secondsection .container {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+
+.secondsection .container {
+    position: relative;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 70px 15px;
+}
+
+.secondsection .container .card h1 {
+    color: var(--main-color);
+}
+
+.secondsection .container .card .text {
+    margin-bottom: 20px;
+}
+
+.secondsection .container .card .icons {
+    display: flex;
+    position: relative;
+}
+
+.secondsection .container .card .icons i {
+    left: -20px;
+    flex-basis: 10%;
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.secondsection .container .card .icons p {
+    flex: 1;
+    margin: 5px 0;
+}
+
+/* End second section */
+
+
+/* Start Works */
+@media (min-width: 768px) {
+    .works .images {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+
+/* medium */
+@media (min-width: 992px) {
+    .works .images {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+
+/* large */
+@media (min-width: 1200px) {
+    .works .images {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+}
+
+.works {
+    padding: 50px 0;
+}
+
+.works h1 {
+    font-size: 55px;
+}
+
+.works .text {
+    text-align: center;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.works .text p {
+    color: #888888;
+}
+
+.works .images {
+    margin-top: 50px;
+    display: grid;
+    gap: 20px;
+}
+
+.works .images img {
+    width: 100%;
+}
+
+/* End Works */
+
+/* Start third section */
+
+@media (min-width: 768px) {
+    .thirdsection .container {
+        display: grid;
+        grid-template-areas:
+            'mg'
+            'inf';
+        justify-content: center;
+        gap: 80px;
+        width: 100%;
+    }
+
+    .thirdsection .container img {
+        width: 550px;
+        margin-left: 70px;
+    }
+
+}
+
+/* medium */
+@media (min-width: 992px) {
+    .thirdsection .container {
+        display: grid;
+        grid-template-areas:
+            'mg'
+            'inf';
+        justify-content: center;
+        gap: 80px;
+        width: 100%;
+    }
+
+    .thirdsection .container img {
+        width: 550px;
+        margin-left: 50px;
+    }
+}
+
+/* large */
+@media (min-width: 1200px) {
+    .thirdsection .container {
+        display: flex;
+        width: 1170px;
+    }
+}
+
+.thirdsection .container {
+    background-color: black;
+    padding: 40px;
+}
+
+.thirdsection .container img {
+    width: 400px;
+    margin-top: 20px;
+    grid-area: mg;
+}
+
+.thirdsection .container .info {
+    grid-area: inf;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding-top: 15px;
+}
+
+.thirdsection .container .info .card {
+    width: 270px;
+    display: flex;
+    flex-flow: column;
+    position: relative;
+}
+
+.thirdsection .container .info .card i {
+    position: absolute;
+    flex-basis: 10%;
+    margin-left: 25px;
+    font-size: 25px;
+}
+
+.thirdsection .container .info .card .text h3 {
+    margin-left: 35px;
+}
+
+.thirdsection .container .info .card .text p {
+    color: #888888;
+    margin-top: 10px;
+}
+
+.thirdsection .container .info .card .text button {
+    margin-top: 20px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.thirdsection .container .info .card .text {
+    flex: 1;
+    margin-left: 30px;
+}
+
+/* End third section */
+
+
+/* Start testimonial */
+
+
+.testimonial {
+    padding: 60px 0 100px 0;
+}
+
+.testimonial .text {
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.testimonial .text h1 {
+    font-size: 50px;
+}
+
+.testimonial .text p {
+    color: #888888;
+}
+
+.testimonial .image {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin: 50px 0;
+    display: flex;
+}
+
+.testimonial .image img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.testimonial .image p {
+    margin-left: 20px;
+    margin-top: 10px;
+    color: #888888;
+}
+
+/* End testimonial */
+
+/* Start services */
+@media (min-width: 768px) {
+    .services .info {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+
+/* medium */
+@media (min-width: 992px) {
+    .services .info {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+}
+
+/* large */
+@media (min-width: 1200px) {
+    .services .info {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+
+.services {
+    padding: 40px 0;
+}
+
+.services h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.services .info {
+    display: grid;
+    gap: 20px;
+}
+
+.services .info .card {
+    width: 300px;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.services .info .card i {
+    position: absolute;
+    top: 5px;
+    font-size: 30px;
+    color: var(--main-color);
+}
+
+.services .info .card .text {
+    margin-left: 50px;
+}
+
+.services .info .card .text p {
+    color: #888888;
+    margin-top: 10px;
+}
+
+.services .info .card .text a {
+    position: absolute;
+    margin-top: 20px;
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+/* End services */
+
+/* Start about */
+
+@media (min-width: 768px) {
+    .about img {
+        width: 320px;
+    }
+
+    .about .text {
+        width: 370px;
+    }
+
+    .about .card {
+        width: 170px;
+    }
+}
+
+/* medium */
+@media (min-width: 992px) {
+    .about .container {
+        padding-left: 40px;
+    }
+
+    .about img {
+        width: 400px;
+    }
+
+    .about .text {
+        width: 460px;
+    }
+
+    .about .card {
+        width: 250px;
+    }
+}
+
+/* large */
+@media (min-width: 1200px) {
+    .about img {
+        width: 400px;
+    }
+
+    .about .container {
+        padding-left: 100px;
+    }
+
+    .about .text {
+        width: 460px;
+    }
+
+    .about .card {
+        width: 250px;
+    }
+}
+
+.about {
+    padding: 50px 0;
+}
+
+.about h1 {
+    font-size: 50px;
+    margin: 0 0 20px 0;
+}
+
+.about .text {
+    grid-area: text;
+}
+
+.about .text p {
+    color: #888888;
+}
+
+.about .container {
+    display: grid;
+    grid-template-areas: 'text ig' 'cards ig';
+
+}
+
+.about img {
+    grid-area: ig;
+}
+
+.about .cards {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-area: cards;
+}
+
+.about .card i {
+    font-size: 40px;
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+.about .card h4 {
+    margin-bottom: 10px;
+}
+
+.about .card p {
+    color: #888888;
+    margin-bottom: 20px;
+}
+
+.about .card a {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+/* End about */
+
+/* Start team */
+
+.team {
+    padding: 50px 0;
+}
+
+.team h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.team p {
+    width: 80%;
+    margin: auto;
+}
+
+.team img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.team .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.team .card {
+    text-align: center;
+    color: #888888;
+}
+
+.team h4 {
+    margin: 25px 0;
+}
+
+.team .card .icons {
+    margin: 30px 0;
+}
+
+.team .card .icons i {
+    margin: 5px;
+}
+
+/* End team */
+
+/* Start contact */
+.contact .container {
+    background-color: #F0E6F0;
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+    width: 100%;
+}
+
+.contact .form {
+    background-color: white;
+    width: 500px;
+    margin: 40px auto;
+    padding: 40px;
+    text-align: start;
+}
+
+.fname {
+    grid-area: fname;
+}
+
+.fname input {
+    width: 100%;
+}
+
+.lname {
+    grid-area: lname;
+}
+
+.lname input {
+    width: 100%;
+}
+
+.email {
+    grid-area: email;
+}
+
+.email input {
+    width: 100%;
+}
+
+.subject {
+    grid-area: subject;
+}
+
+.subject input {
+    width: 100%;
+}
+
+.message {
+    grid-area: message;
+}
+
+.message input {
+    width: 100%;
+    height: 150px;
+    position: relative;
+}
+
+.message input::placeholder {
+    content: "";
+    position: absolute;
+    text-align: start;
+    top: 10px;
+}
+
+.contact .form .inputs {
+    margin-top: 20px;
+    display: grid;
+    grid-template-areas: 'fname lname' 'email email'
+        'subject subject' 'message message';
+    gap: 20px;
+}
+
+.contact .form .inputs input {
+    margin-top: 5px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: #888888 solid 1px;
+    color: #888888;
+}
+
+.contact .form .inputs button {
+    display: block;
+    margin: 25px auto 0px auto;
+    padding: 15px 25px;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 40px;
+    outline: none;
+    border: none;
+}
+
+.contact .form .inputs button:hover {
+    cursor: pointer;
+    background-color: #1e6791;
+    transition: 0.5s;
+}
+
+/* End contact */
+
+/* Start Footer */
+@media (min-width: 768px) {
+    footer .container {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+
+    }
+}
+
+/* medium */
+@media (min-width: 992px) {
+    footer .container {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+
+    }
+}
+
+/* large */
+@media (min-width: 1200px) {
+    footer .container {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+
+    }
+}
+
+
+footer {
+    background-color: #444444;
+    color: white;
+    padding: 80px;
+}
+
+footer .container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 40px;
+}
+
+footer .container .about {
+    margin-top: -50px;
+}
+
+footer .container .about h4 {
+    margin-bottom: 20px;
+}
+
+footer .container .about p {
+    color: #888888;
+}
+
+footer .features ul {
+    list-style-type: none;
+    margin-top: -10px;
+    text-align: center;
+}
+
+footer .features ul li:first-child a {
+    color: white;
+}
+
+footer .features ul li {
+    margin: 10px 0;
+}
+
+footer .features ul a {
+    color: #888888;
+    text-decoration: none;
+}
+
+footer .features ul a:hover {
+    color: white;
+    transition: 0.3s;
+}
+
+footer .follow h4 {
+    margin: 0 0 15px 0;
+}
+
+footer .follow .icons i {
+    margin: 5px;
+    color: #888888;
+}
+
+footer .follow .icons i:hover {
+    color: white;
+    transition: 0.3s;
+}
+
+footer .subscribe {
+    margin-top: -3px;
+}
+
+footer .subscribe h4 {
+    margin-bottom: 20px;
+}
+
+footer .subscribe input {
+    padding: 10px 15px;
+    border-radius: 30px;
+    outline: none;
+}
+
+footer .subscribe button {
+    width: 70px;
+    padding: 5px 10px;
+    margin: 15px 0 15px 70px;
+    border-radius: 30px;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+}
+
+footer .subscribe button:hover {
+    cursor: pointer;
+    background-color: #1e6791;
+    transition: 0.5s;
+}
+
+/* End Footer */
